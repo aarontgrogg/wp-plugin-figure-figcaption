@@ -1,3 +1,13 @@
+<?php
+
+/*
+	Plugin Name: Replace DIVs with FIGURE and FIGCAPTION
+	Description: Replace WordPress' <div>s with HTML5's <figure> and <figcaption>.
+	Version: 1.0
+	Author: Aaron T. Grogg
+	Author URI: http://aarontgrogg.com/
+	License: GPLv2 or later
+*/
 
 	if (!function_exists( 'atg_figure_caption' )) {
 	
@@ -45,3 +55,5 @@
 		
 	}
 	add_filter( 'img_caption_shortcode', 'atg_figure_caption', 10, 3 );
+
+?>
