@@ -3,7 +3,7 @@
 /*
 	Plugin Name: Replace DIVs with FIGURE and FIGCAPTION
 	Description: Replace WordPress' <div>s with HTML5's <figure> and <figcaption>.
-	Version: 1.0
+	Version: 1.1
 	Author: Aaron T. Grogg
 	Author URI: http://aarontgrogg.com/
 	License: GPLv2 or later
@@ -27,15 +27,15 @@
 			/* Merge the defaults with user input. */
 			$attr = shortcode_atts( $defaults, $attr );
 
-			/* If the width is less than 1 or there is no caption, return the content wrapped between the [caption]< tags. */
-			if ( 1 > $attr['width'] || empty( $attr['caption'] ) ) { return $content; }
+			/* If the width is less than 1, return the content wrapped between the [caption] tags. */
+			if ( 1 > $attr['width'] ) { return $content; }
 
-			/* Set up the attributes for the caption <div>. */
+			/* Set up the attributes for the caption <figure>. */
 			$attributes = ( !empty( $attr['id'] ) ? ' id="' . esc_attr( $attr['id'] ) . '"' : '' );
 			$attributes .= ' class="wp-caption ' . esc_attr( $attr['align'] ) . '"';
 			//$attributes .= ' style="width: ' . esc_attr( $attr['width'] ) . 'px"';
 
-			/* Open the caption <div>. */
+			/* Open the caption <figure>. */
 			$output = '<figure' . $attributes .'>';
 
 			/* Allow shortcodes for the content the caption was created for. */
@@ -46,10 +46,10 @@
 				$output .= '<figcaption class="wp-caption-text">' . $attr['caption'] . '</figcaption>';
 			}
 
-			/* Close the caption </div>. */
+			/* Close the caption </figure>. */
 			$output .= '</figure>';
 
-			/* Return the formatted, clean caption. */
+			/* Return the formatted, clean figure & figcaption. */
 			return $output;
 		}
 		
