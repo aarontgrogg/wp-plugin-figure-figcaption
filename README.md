@@ -3,7 +3,7 @@ Contributors: aarontgrogg
 Tags: multisite, admin, network, links
 Requires at least: 3.1
 Tested up to: 3.8
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 
 
@@ -60,6 +60,10 @@ aarontgrogg@gmail.com
 
 
 == Changelog ==
+
+= 1.1 =
+2014-05-13:
+- Nipon noticed that if there is no caption, the entire shortcode simply returns.  Remove requirement for a caption, allowing all images to get the <figure> tag; images with a caption will also get <figcaption>.
 
 = 1.0 =
 2013-12-24:
