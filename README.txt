@@ -2,8 +2,8 @@
 Contributors: aarontgrogg
 Tags: multisite, admin, network, links
 Requires at least: 3.1
-Tested up to: 3.8
-Stable tag: 1.1
+Tested up to: 4.2.2
+Stable tag: 1.2
 License: GPLv2 or later
 
 
@@ -60,6 +60,10 @@ aarontgrogg@gmail.com
 
 
 == Changelog ==
+
+= 1.2 =
+2015-05-15:
+- Tested in WP 4.2.2 and slight refactoring
 
 = 1.1 =
 2014-05-13:
