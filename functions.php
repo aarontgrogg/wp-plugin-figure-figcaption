@@ -3,13 +3,13 @@
 /*
 	Plugin Name: Replace DIVs with FIGURE and FIGCAPTION
 	Description: Replace WordPress' <div>s with HTML5's <figure> and <figcaption>.
-	Version: 1.1
+	Version: 1.2
 	Author: Aaron T. Grogg
 	Author URI: http://aarontgrogg.com/
 	License: GPLv2 or later
 */
 
-	if (!function_exists( 'atg_figure_caption' )) {
+	if (!function_exists( 'atg_figure_caption' )) :
 	
 		function atg_figure_caption( $output, $attr, $content ) {
 
@@ -42,9 +42,9 @@
 			$output .= do_shortcode( $content );
 
 			/* Append the caption text. */
-			if ($attr['caption'] !== '') {
+			if ($attr['caption'] !== '') :
 				$output .= '<figcaption class="wp-caption-text">' . $attr['caption'] . '</figcaption>';
-			}
+			endif;
 
 			/* Close the caption </figure>. */
 			$output .= '</figure>';
@@ -53,7 +53,7 @@
 			return $output;
 		}
 		
-	}
+	endif;
 	add_filter( 'img_caption_shortcode', 'atg_figure_caption', 10, 3 );
 
 ?>
