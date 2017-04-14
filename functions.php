@@ -2,7 +2,7 @@
 
 /*
 	Plugin Name: Replace DIVs with FIGURE and FIGCAPTION
-	Description: Replace WordPress&apos; &lt;div&gt;s with HTML5&apos;s &lt;figure&gt; and &lt;figcaption&gt;.
+	Description: Replace WordPress' &lt;div&gt;s with HTML5's &lt;figure&gt; and &lt;figcaption&gt; for images that are inserted with caption.
 	Version: 1.2
 	Author: Aaron T. Grogg
 	Author URI: http://aarontgrogg.com/
