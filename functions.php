@@ -1,13 +1,12 @@
 <?php
-
-/*
-	Plugin Name: Replace DIVs with FIGURE and FIGCAPTION
-	Description: Replace WordPress' &lt;div&gt;s with HTML5's &lt;figure&gt; and &lt;figcaption&gt;.
-	Version: 1.2
-	Author: Aaron T. Grogg
-	Author URI: http://aarontgrogg.com/
-	License: GPLv2 or later
-*/
+/* *
+ * Plugin Name: Replace WP DIVs with FIGURE and FIGCAPTION
+ * Description: Replace WordPress' &lt;div&gt;s with HTML5's &lt;figure&gt; and &lt;figcaption&gt;.
+ * Version: 1.2
+ * Author: Aaron T. Grogg
+ * Author URI: http://aarontgrogg.com/
+ * License: GPLv2 or later
+ * */
 
 	if (!function_exists( 'atg_figure_caption' )) :
 	
